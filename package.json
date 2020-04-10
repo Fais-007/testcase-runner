@@ -1,7 +1,13 @@
 {
+  "publisher": "faisaliqbal",
   "name": "testcase-runner",
   "displayName": "testcase-runner",
   "description": "Insert test case with just click",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fais-007/testcase-runner/blob/master/images/icon.png"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.44.0"

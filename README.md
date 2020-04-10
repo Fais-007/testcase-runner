@@ -1,65 +1,23 @@
 # testcase-runner README
 
-This is the README for your extension "testcase-runner". After writing up a brief description, we recommend including the following sections.
+This extension is used to insert test case by fetching it from text file so that in multiple checking case user doesn't have to input test case again.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+From command pallete, context menu or shortcut one can directly fetch the test case.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Latest version of vs-code.
 
-## Extension Settings
+## How to use
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1 - Make text file with same name as code file name (.txt).
+2 - Save your test case in that text file.
+3 - Write your code in main file and execute, to get test case use Run Testcase from context menu or use shortcut (ctrl+f1) or command Run Testcase.
 
-For example:
+for eg:
+Main file - sum.cpp
+Test case file - sum.txt
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Call command when in main file.
