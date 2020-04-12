@@ -3,13 +3,11 @@
 This extension is used to insert test case by fetching it from text file so that in multiple checking case user doesn't have to input test case again.
 
 ## Features
-
-<<<<<<< HEAD
 From command pallete, context menu or shortcut one can directly fetch the test case.
 
 ## Requirements
 
-Latest version of vs-code.
+vscode version >= 1.44.0
 
 ## How to use
 
