@@ -21,7 +21,3 @@ Test case file - sum.txt
 
 Call command when in main file.
 This extension takes text(test case) from .txt file and insert in the vscode terminal.
-
-## Requirements
-
-Latest vscode version
