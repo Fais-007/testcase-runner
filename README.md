@@ -24,4 +24,4 @@ This extension takes text(test case) from .txt file and insert in the vscode ter
 
 Snapshot
 
-<a href="https://github.com/Fais-007/testcase-runner/blob/master/images/testcase.gif"></a>
+<a><img src="https://github.com/Fais-007/testcase-runner/blob/master/images/testcase.gif"/></a>
