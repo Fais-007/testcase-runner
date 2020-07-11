@@ -12,8 +12,8 @@ vscode version >= 1.44.0
 
 ## How to use
 
-1 - Make text file with name (test.txt).
-2 - Save your test case in that text file.
+1 - Make text file with name (test.txt). <br />
+2 - Save your test case in that text file. <br />
 3 - Write your code in main file and execute, to get test case use Run Testcase from context menu or use shortcut (ctrl+f1) or command Run Testcase.
 
 for eg:
