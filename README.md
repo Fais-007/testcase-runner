@@ -16,9 +16,9 @@ vscode version >= 1.44.0
 2 - Save your test case in that text file. <br />
 3 - Write your code in main file and execute, to get test case use Run Testcase from context menu or use shortcut (ctrl+f1) or command Run Testcase.
 
-for eg:
-Main file - sum.cpp
-Test case file - sum.txt
+for eg: <br />
+Main file - sum.cpp <br />
+Test case file - test.txt
 
 Call command when in main file.
 This extension takes text(test case) from .txt file and insert in the vscode terminal.
