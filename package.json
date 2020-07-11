@@ -1,68 +1,68 @@
 {
-  "publisher": "faisaliqbal",
-  "name": "testcase-runner",
-  "displayName": "testcase-runner",
-  "description": "Insert test case with just click",
-  "icon": "images/icon.png",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Fais-007/testcase-runner/blob/master/images/icon.png"
-  },
-  "version": "0.1.1",
-  "engines": {
-    "vscode": "^1.44.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:terminalTest.sendText"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "terminalTest.sendText",
-        "title": "Run Testcase"
-      }
+    "publisher": "faisaliqbal",
+    "name": "testcase-runner",
+    "displayName": "testcase-runner",
+    "description": "Insert test case with just click",
+    "icon": "images/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Fais-007/testcase-runner"
+    },
+    "version": "0.1.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Other"
     ],
-    "keybindings": [
-      {
-        "command": "terminalTest.sendText",
-        "key": "ctrl+f1",
-        "mac": "cmd+f1",
-        "when": "editorTextFocus"
-      }
+    "activationEvents": [
+        "onCommand:terminalTest.sendText"
     ],
-    "menus": {
-      "editor/context": [
-        {
-          "command": "terminalTest.sendText",
-          "alt": "markdown.showPreviewToSide",
-          "group": "navigation"
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "terminalTest.sendText",
+                "title": "Run Testcase"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "terminalTest.sendText",
+                "key": "ctrl+f1",
+                "mac": "cmd+f1",
+                "when": "editorTextFocus"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "terminalTest.sendText",
+                    "alt": "markdown.showPreviewToSide",
+                    "group": "navigation"
+                }
+            ]
         }
-      ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint src --ext ts",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^13.13.14",
+        "@types/vscode": "^1.44.0",
+        "@typescript-eslint/eslint-plugin": "^2.26.0",
+        "@typescript-eslint/parser": "^2.26.0",
+        "eslint": "^6.8.0",
+        "glob": "^7.1.6",
+        "mocha": "^7.1.1",
+        "typescript": "^3.8.3",
+        "vscode-test": "^1.3.0"
     }
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "lint": "eslint src --ext ts",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "test": "node ./out/test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/glob": "^7.1.1",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "^13.13.14",
-    "@types/vscode": "^1.44.0",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
-    "eslint": "^6.8.0",
-    "glob": "^7.1.6",
-    "mocha": "^7.1.1",
-    "typescript": "^3.8.3",
-    "vscode-test": "^1.3.0"
-  }
 }
