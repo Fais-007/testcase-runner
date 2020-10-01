@@ -31,12 +31,6 @@ export function activate(context: vscode.ExtensionContext) {
             }
         })
     );
-
-    vscode.window.onDidCloseTerminal((terminal) => {
-        vscode.window.showInformationMessage(
-            `onDidCloseTerminal, name: ${terminal.name}`
-        );
-    });
 }
 
 function ensureTerminalExists(): boolean {
@@ -46,5 +40,3 @@ function ensureTerminalExists(): boolean {
     }
     return true;
 }
-
-export function deactivate() {}
